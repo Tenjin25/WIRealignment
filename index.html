@@ -818,19 +818,103 @@ body {
     line-height: 1.6 !important;
   }
 }
-.metric {
+/* Gradient shaded metrics - Democratic (blue shades based on margin) */
+.metric.d-tilt {
   background: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid #dbeafe;
+}
+
+.metric.d-lean {
+  background: #dbeafe;
+  color: #1e40af;
+  border: 1px solid #bfdbfe;
+}
+
+.metric.d-likely {
+  background: #bfdbfe;
+  color: #1e3a8a;
+  border: 1px solid #93c5fd;
+}
+
+.metric.d-safe {
+  background: #93c5fd;
+  color: #1e3a8a;
+  border: 1px solid #60a5fa;
+}
+
+.metric.d-strong {
+  background: #60a5fa;
+  color: #1e293b;
+  border: 1px solid #3b82f6;
+}
+
+.metric.d-dominant {
+  background: #3b82f6;
+  color: #f8fafc;
+  border: 1px solid #2563eb;
+}
+
+.metric.d-annihilation {
+  background: #1d4ed8;
+  color: #ffffff;
+  border: 1px solid #1e40af;
+}
+
+/* Gradient shaded metrics - Republican (red shades based on margin) */
+.metric.r-tilt {
+  background: #fee2e2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
+
+.metric.r-lean {
+  background: #fecaca;
+  color: #b91c1c;
+  border: 1px solid #fca5a5;
+}
+
+.metric.r-likely {
+  background: #fca5a5;
+  color: #991b1b;
+  border: 1px solid #f87171;
+}
+
+.metric.r-safe {
+  background: #f87171;
+  color: #7f1d1d;
+  border: 1px solid #ef4444;
+}
+
+.metric.r-strong {
+  background: #ef4444;
+  color: #fef2f2;
+  border: 1px solid #dc2626;
+}
+
+.metric.r-dominant {
+  background: #dc2626;
+  color: #ffffff;
+  border: 1px solid #b91c1c;
+}
+
+.metric.r-annihilation {
+  background: #991b1b;
+  color: #ffffff;
+  border: 1px solid #7f1d1d;
+}
+
+/* Base metric styling */
+.metric {
   padding: 4px 8px;
   border-radius: 4px;
   font-weight: 600;
-  color: #1d4ed8;
   display: inline-block;
   margin: 2px;
-  border: 1px solid #dbeafe;
   font-size: 13px;
 }
 
-/* Red variant for Republican margins/shifts */
+/* Legacy red class for backward compatibility */
 .metric.red {
   background: #fee2e2;
   color: #dc2626;
@@ -996,7 +1080,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <h4>🔍 Research Findings</h4>
           <div class="finding-card">
             <h5>Milwaukee County - Urban Democratic Stronghold</h5>
-            <p><strong>Historical Trend:</strong> Milwaukee County has shown steadily increasing Democratic margins: <span class="metric">2000: D+20.49%</span> → <span class="metric">2004: D+24.34%</span> → <span class="metric">2008: D+35.85%</span> → <span class="metric">2012: D+36.04%</span> → <span class="metric">2016: D+37.01%</span> → <span class="metric">2020: D+39.85%</span> → <span class="metric">2024: D+38.41%</span></p>
+            <p><strong>Historical Trend:</strong> Milwaukee County has shown steadily increasing Democratic margins: <span class="metric d-safe">2000: D+20.49%</span> → <span class="metric d-safe">2004: D+24.34%</span> → <span class="metric d-strong">2008: D+35.85%</span> → <span class="metric d-strong">2012: D+36.04%</span> → <span class="metric d-strong">2016: D+37.01%</span> → <span class="metric d-strong">2020: D+39.85%</span> → <span class="metric d-strong">2024: D+38.41%</span></p>
             <p><strong>Pattern:</strong> 18-point leftward shift from 2000 to peak in 2020. Margins now stabilized at D+39-40%.</p>
             <p><strong>Key Demographics:</strong> Large African American population (26.8%), urban professionals, and college-educated voters. Wisconsin's most populous county (~945,000 residents).</p>
             <p><strong>Geography:</strong> City of Milwaukee drives Democratic margins, while suburban areas show mixed patterns.</p>
@@ -1006,16 +1090,16 @@ document.addEventListener('DOMContentLoaded', function() {
             <h5>WOW Counties - Suburban Republican Strongholds (Moderating)</h5>
             <p><strong>Geographic Context:</strong> Waukesha, Ozaukee, and Washington counties form the affluent suburban collar around Milwaukee, historically the Republican firewall in statewide elections.</p>
             <p><strong>Complete 7-Election Trends:</strong></p>
-            <p><strong>Waukesha:</strong> <span class="metric red">2000: R+33.76%</span> → <span class="metric red">2004: R+35.29%</span> → <span class="metric red">2008: R+25.68%</span> → <span class="metric red">2012: R+34.45%</span> → <span class="metric red">2016: R+26.49%</span> → <span class="metric red">2020: R+20.80%</span> → <span class="metric red">2024: R+19.69%</span><br>
-            <strong>Ozaukee:</strong> <span class="metric red">2000: R+33.77%</span> → <span class="metric red">2004: R+32.41%</span> → <span class="metric red">2008: R+21.72%</span> → <span class="metric red">2012: R+30.31%</span> → <span class="metric red">2016: R+18.82%</span> → <span class="metric red">2020: R+12.03%</span> → <span class="metric red">2024: R+10.45%</span><br>
-            <strong>Washington:</strong> <span class="metric red">2000: R+37.53%</span> → <span class="metric red">2004: R+40.58%</span> → <span class="metric red">2008: R+29.58%</span> → <span class="metric red">2012: R+40.13%</span> → <span class="metric red">2016: R+39.58%</span> → <span class="metric red">2020: R+38.14%</span> → <span class="metric red">2024: R+36.21%</span></p>
+            <p><strong>Waukesha:</strong> <span class="metric r-strong">2000: R+33.76%</span> → <span class="metric r-strong">2004: R+35.29%</span> → <span class="metric r-safe">2008: R+25.68%</span> → <span class="metric r-strong">2012: R+34.45%</span> → <span class="metric r-safe">2016: R+26.49%</span> → <span class="metric r-safe">2020: R+20.80%</span> → <span class="metric r-likely">2024: R+19.69%</span><br>
+            <strong>Ozaukee:</strong> <span class="metric r-strong">2000: R+33.77%</span> → <span class="metric r-strong">2004: R+32.41%</span> → <span class="metric r-safe">2008: R+21.72%</span> → <span class="metric r-strong">2012: R+30.31%</span> → <span class="metric r-likely">2016: R+18.82%</span> → <span class="metric r-likely">2020: R+12.03%</span> → <span class="metric r-likely">2024: R+10.45%</span><br>
+            <strong>Washington:</strong> <span class="metric r-strong">2000: R+37.53%</span> → <span class="metric r-dominant">2004: R+40.58%</span> → <span class="metric r-safe">2008: R+29.58%</span> → <span class="metric r-dominant">2012: R+40.13%</span> → <span class="metric r-strong">2016: R+39.58%</span> → <span class="metric r-strong">2020: R+38.14%</span> → <span class="metric r-strong">2024: R+36.21%</span></p>
             <p><strong>Pattern:</strong> Waukesha and Ozaukee show dramatic Democratic gains (14-23 points 2000-2024), with 2020 representing inflection point toward Democrats. Washington more stable, slight moderation. College-educated suburban voters shifting left.
             <p><strong>Demographics:</strong> Affluent, highly educated (45-50% bachelor's degree+), predominantly white suburban communities. Combined population ~620,000.</p>
             <p><strong>Strategic Impact:</strong> WOW counties cast ~10% of statewide votes. Their erosion from R+38-40% peaks to R+20-30% represents a massive shift - Republicans must compensate with stronger rural performance or lose statewide races.</p>
           </div>
           <div class="finding-card">
             <h5>Dane County - Rapidly Growing Progressive Base</h5>
-            <p><strong>Explosive Democratic Growth:</strong> Dane County margins have expanded dramatically: <span class="metric">2000: D+28.58%</span> → <span class="metric">2004: D+33.07%</span> → <span class="metric">2008: D+46.98%</span> → <span class="metric">2012: D+43.54%</span> → <span class="metric">2016: D+47.17%</span> → <span class="metric">2020: D+52.61%</span> → <span class="metric">2024: D+51.53%</span></p>
+            <p><strong>Explosive Democratic Growth:</strong> Dane County margins have expanded dramatically: <span class="metric d-safe">2000: D+28.58%</span> → <span class="metric d-strong">2004: D+33.07%</span> → <span class="metric d-dominant">2008: D+46.98%</span> → <span class="metric d-dominant">2012: D+43.54%</span> → <span class="metric d-dominant">2016: D+47.17%</span> → <span class="metric d-dominant">2020: D+52.61%</span> → <span class="metric d-dominant">2024: D+51.53%</span></p>
             <p><strong>Magnitude:</strong> <span style="background: rgba(8, 48, 107, 0.2); color: #1e3a8a; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(8, 48, 107, 0.3); font-size: 12px;">22-point leftward shift</span> since 2000 - among the largest Democratic gains in any Wisconsin county.</p>
             <p><strong>Metro Growth:</strong> Madison MSA is Wisconsin's fastest-growing region. Home to UW-Madison (45,000+ students), state government, and thriving tech sector.</p>
             <p><strong>Population:</strong> ~550,000 residents (2020), up from ~427,000 (2000) - 29% growth in 20 years.</p>
@@ -1038,24 +1122,24 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
           <div class="finding-card">
             <h5>Additional Surrounding Counties - Complete 2000-2024 Trends</h5>
-            <p><strong>Rock County (Janesville):</strong> <span class="metric">2000: D+18.47%</span> → <span class="metric">2004: D+16.71%</span> → <span class="metric">2008: D+29.26%</span> → <span class="metric">2012: D+23.18%</span> → <span class="metric">2016: D+10.33%</span> → <span class="metric">2020: D+11.15%</span> → <span class="metric">2024: D+7.27%</span><br>
+            <p><strong>Rock County (Janesville):</strong> <span class="metric d-likely">2000: D+18.47%</span> → <span class="metric d-likely">2004: D+16.71%</span> → <span class="metric d-safe">2008: D+29.26%</span> → <span class="metric d-safe">2012: D+23.18%</span> → <span class="metric d-likely">2016: D+10.33%</span> → <span class="metric d-likely">2020: D+11.15%</span> → <span class="metric d-lean">2024: D+7.27%</span><br>
             <em>Pattern: Democratic anchor eroding - down 11 points from 2000 to 2024. Obama peak in 2008, steady decline since.</em></p>
-            <p><strong>Racine County:</strong> <span class="metric red">2000: R+2.76%</span> → <span class="metric red">2004: R+4.16%</span> → <span class="metric">2008: D+7.41%</span> → <span class="metric">2012: D+3.54%</span> → <span class="metric red">2016: R+4.35%</span> → <span class="metric red">2020: R+4.06%</span> → <span class="metric red">2024: R+6.15%</span><br>
+            <p><strong>Racine County:</strong> <span class="metric r-tilt">2000: R+2.76%</span> → <span class="metric r-tilt">2004: R+4.16%</span> → <span class="metric d-lean">2008: D+7.41%</span> → <span class="metric d-tilt">2012: D+3.54%</span> → <span class="metric r-tilt">2016: R+4.35%</span> → <span class="metric r-tilt">2020: R+4.06%</span> → <span class="metric r-lean">2024: R+6.15%</span><br>
             <em>Pattern: Volatile swing county - flipped D in 2008, back to R by 2016. Manufacturing decline and white working-class realignment driving Republican consolidation.</em></p>
-            <p><strong>Kenosha County:</strong> <span class="metric">2000: D+5.55%</span> → <span class="metric">2004: D+5.91%</span> → <span class="metric">2008: D+18.06%</span> → <span class="metric">2012: D+12.23%</span> → <span class="metric red">2016: R+0.33%</span> → <span class="metric red">2020: R+3.13%</span> → <span class="metric red">2024: R+6.23%</span><br>
+            <p><strong>Kenosha County:</strong> <span class="metric d-lean">2000: D+5.55%</span> → <span class="metric d-lean">2004: D+5.91%</span> → <span class="metric d-likely">2008: D+18.06%</span> → <span class="metric d-likely">2012: D+12.23%</span> → <span class="metric r-tilt">2016: R+0.33%</span> → <span class="metric r-tilt">2020: R+3.13%</span> → <span class="metric r-lean">2024: R+6.23%</span><br>
             <em>Pattern: Classic swing county - Democratic 2000-2012, flipped Republican 2016-2024. 12-point swing from 2008 peak to 2024. Important bellwether.</em></p>
-            <p><strong>Eau Claire County:</strong> <span class="metric">2000: D+6.59%</span> → <span class="metric">2004: D+9.77%</span> → <span class="metric">2008: D+22.15%</span> → <span class="metric">2012: D+13.52%</span> → <span class="metric">2016: D+7.26%</span> → <span class="metric">2020: D+10.77%</span> → <span class="metric">2024: D+10.56%</span><br>
+            <p><strong>Eau Claire County:</strong> <span class="metric d-lean">2000: D+6.59%</span> → <span class="metric d-lean">2004: D+9.77%</span> → <span class="metric d-safe">2008: D+22.15%</span> → <span class="metric d-likely">2012: D+13.52%</span> → <span class="metric d-lean">2016: D+7.26%</span> → <span class="metric d-likely">2020: D+10.77%</span> → <span class="metric d-likely">2024: D+10.56%</span><br>
             <em>Pattern: Consistently Democratic - university town (UW-Eau Claire) anchors margins. Obama peak in 2008, moderate decline but stable Democratic lean D+7-11% range.</em></p>
-            <p><strong>La Crosse County:</strong> <span class="metric">2000: D+7.43%</span> → <span class="metric">2004: D+7.86%</span> → <span class="metric">2008: D+23.45%</span> → <span class="metric">2012: D+17.24%</span> → <span class="metric">2016: D+9.56%</span> → <span class="metric">2020: D+13.50%</span> → <span class="metric">2024: D+9.36%</span><br>
+            <p><strong>La Crosse County:</strong> <span class="metric d-lean">2000: D+7.43%</span> → <span class="metric d-lean">2004: D+7.86%</span> → <span class="metric d-safe">2008: D+23.45%</span> → <span class="metric d-likely">2012: D+17.24%</span> → <span class="metric d-lean">2016: D+9.56%</span> → <span class="metric d-likely">2020: D+13.50%</span> → <span class="metric d-lean">2024: D+9.36%</span><br>
             <em>Pattern: Reliable Democratic bellwether - Mississippi River city with UW-La Crosse. Strong Obama peak in 2008, declined but remains Democratic. Classic swing county indicator for statewide races.</em></p>
           </div>
           <div class="finding-card">
             <h5>BOW Counties - Fox Valley Realignment</h5>
             <p><strong>Geographic Context:</strong> Brown (Green Bay), Outagamie (Appleton), Winnebago (Oshkosh) form the Fox Valley industrial corridor in northeast Wisconsin.</p>
             <p><strong>Complete 7-Election Trends:</strong></p>
-            <p><strong>Brown:</strong> <span class="metric red">2000: R+4.79%</span> → <span class="metric red">2004: R+9.93%</span> → <span class="metric">2008: D+9.15%</span> → <span class="metric red">2012: R+1.79%</span> → <span class="metric red">2016: R+10.73%</span> → <span class="metric red">2020: R+7.19%</span> → <span class="metric red">2024: R+7.50%</span><br>
-            <strong>Outagamie:</strong> <span class="metric red">2000: R+8.88%</span> → <span class="metric red">2004: R+9.70%</span> → <span class="metric">2008: D+11.60%</span> → <span class="metric red">2012: R+1.81%</span> → <span class="metric red">2016: R+12.57%</span> → <span class="metric red">2020: R+9.92%</span> → <span class="metric red">2024: R+10.17%</span><br>
-            <strong>Winnebago:</strong> <span class="metric red">2000: R+5.71%</span> → <span class="metric red">2004: R+6.32%</span> → <span class="metric">2008: D+11.66%</span> → <span class="metric">2012: D+3.73%</span> → <span class="metric red">2016: R+7.34%</span> → <span class="metric red">2020: R+3.97%</span> → <span class="metric red">2024: R+4.74%</span></p>
+            <p><strong>Brown:</strong> <span class="metric r-tilt">2000: R+4.79%</span> → <span class="metric r-lean">2004: R+9.93%</span> → <span class="metric d-lean">2008: D+9.15%</span> → <span class="metric r-tilt">2012: R+1.79%</span> → <span class="metric r-likely">2016: R+10.73%</span> → <span class="metric r-lean">2020: R+7.19%</span> → <span class="metric r-lean">2024: R+7.50%</span><br>
+            <strong>Outagamie:</strong> <span class="metric r-lean">2000: R+8.88%</span> → <span class="metric r-lean">2004: R+9.70%</span> → <span class="metric d-likely">2008: D+11.60%</span> → <span class="metric r-tilt">2012: R+1.81%</span> → <span class="metric r-likely">2016: R+12.57%</span> → <span class="metric r-lean">2020: R+9.92%</span> → <span class="metric r-likely">2024: R+10.17%</span><br>
+            <strong>Winnebago:</strong> <span class="metric r-lean">2000: R+5.71%</span> → <span class="metric r-lean">2004: R+6.32%</span> → <span class="metric d-likely">2008: D+11.66%</span> → <span class="metric d-tilt">2012: D+3.73%</span> → <span class="metric r-lean">2016: R+7.34%</span> → <span class="metric r-tilt">2020: R+3.97%</span> → <span class="metric r-tilt">2024: R+4.74%</span></p>
             <p><strong>Pattern:</strong> All three counties show oscillation around 2008 Obama peak, then consolidation Republican 2016-2024. Brown most stable Republican, Winnebago most volatile. 2008 Obama peaked in all three.</p>
             <p><strong>Demographics:</strong> Working-class white voters, manufacturing jobs, smaller cities. Lower college education rates than WOW counties but more diverse than rural areas.</p>
             <p><strong>Contrast with WOW:</strong> While college-educated WOW suburbs trend Democratic, working-class BOW counties moved Republican. Different educational profiles drive opposite partisan trajectories.</p>
@@ -1065,11 +1149,11 @@ document.addEventListener('DOMContentLoaded', function() {
             <h5>Driftless Area - The Obama-Trump Realignment</h5>
             <p><strong>Regional Character:</strong> Southwest Wisconsin's Driftless Area (Crawford, Grant, Lafayette, Richland, Vernon counties) features unique topography with rolling hills never flattened by glaciers. Historically Democratic farming region with Norwegian/German heritage.</p>
             <p><strong>Complete 7-Election Trends - Stunning Reversal:</strong></p>
-            <p><strong>Crawford:</strong> <span class="metric">2000: D+13.27%</span> → <span class="metric">2004: D+11.54%</span> → <span class="metric">2008: D+27.03%</span> → <span class="metric">2012: D+19.98%</span> → <span class="metric red">2016: R+5.41%</span> → <span class="metric red">2020: R+7.67%</span> → <span class="metric red">2024: R+13.76%</span> = <strong>27pt swing 2000-2024</strong><br>
-            <strong>Grant:</strong> <span class="metric">2000: D+2.05%</span> → <span class="metric">2004: D+2.60%</span> → <span class="metric">2008: D+23.88%</span> → <span class="metric">2012: D+13.77%</span> → <span class="metric red">2016: R+9.47%</span> → <span class="metric red">2020: R+12.28%</span> → <span class="metric red">2024: R+18.15%</span> = <strong>20pt swing 2000-2024</strong><br>
-            <strong>Lafayette:</strong> <span class="metric">2000: D+5.15%</span> → <span class="metric">2004: D+5.64%</span> → <span class="metric">2008: D+22.32%</span> → <span class="metric">2012: D+15.37%</span> → <span class="metric red">2016: R+8.99%</span> → <span class="metric red">2020: R+13.72%</span> → <span class="metric red">2024: R+20.23%</span> = <strong>25pt swing 2000-2024</strong><br>
-            <strong>Richland:</strong> <span class="metric red">2000: R+1.89%</span> → <span class="metric red">2004: R+3.56%</span> → <span class="metric">2008: D+20.63%</span> → <span class="metric">2012: D+16.13%</span> → <span class="metric red">2016: R+5.54%</span> → <span class="metric red">2020: R+9.72%</span> → <span class="metric red">2024: R+13.11%</span> = <strong>15pt swing 2000-2024</strong><br>
-            <strong>Vernon:</strong> <span class="metric">2000: D+6.85%</span> → <span class="metric">2004: D+7.75%</span> → <span class="metric">2008: D+22.00%</span> → <span class="metric">2012: D+14.73%</span> → <span class="metric red">2016: R+4.53%</span> → <span class="metric red">2020: R+4.78%</span> → <span class="metric red">2024: R+7.78%</span> = <strong>14pt swing 2000-2024</strong></p>
+            <p><strong>Crawford:</strong> <span class="metric d-likely">2000: D+13.27%</span> → <span class="metric d-likely">2004: D+11.54%</span> → <span class="metric d-safe">2008: D+27.03%</span> → <span class="metric d-likely">2012: D+19.98%</span> → <span class="metric r-tilt">2016: R+5.41%</span> → <span class="metric r-lean">2020: R+7.67%</span> → <span class="metric r-likely">2024: R+13.76%</span> = <strong>27pt swing 2000-2024</strong><br>
+            <strong>Grant:</strong> <span class="metric d-tilt">2000: D+2.05%</span> → <span class="metric d-tilt">2004: D+2.60%</span> → <span class="metric d-safe">2008: D+23.88%</span> → <span class="metric d-likely">2012: D+13.77%</span> → <span class="metric r-lean">2016: R+9.47%</span> → <span class="metric r-likely">2020: R+12.28%</span> → <span class="metric r-likely">2024: R+18.15%</span> = <strong>20pt swing 2000-2024</strong><br>
+            <strong>Lafayette:</strong> <span class="metric d-tilt">2000: D+5.15%</span> → <span class="metric d-lean">2004: D+5.64%</span> → <span class="metric d-safe">2008: D+22.32%</span> → <span class="metric d-likely">2012: D+15.37%</span> → <span class="metric r-lean">2016: R+8.99%</span> → <span class="metric r-likely">2020: R+13.72%</span> → <span class="metric r-safe">2024: R+20.23%</span> = <strong>25pt swing 2000-2024</strong><br>
+            <strong>Richland:</strong> <span class="metric r-tilt">2000: R+1.89%</span> → <span class="metric r-tilt">2004: R+3.56%</span> → <span class="metric d-safe">2008: D+20.63%</span> → <span class="metric d-likely">2012: D+16.13%</span> → <span class="metric r-lean">2016: R+5.54%</span> → <span class="metric r-lean">2020: R+9.72%</span> → <span class="metric r-likely">2024: R+13.11%</span> = <strong>15pt swing 2000-2024</strong><br>
+            <strong>Vernon:</strong> <span class="metric d-lean">2000: D+6.85%</span> → <span class="metric d-lean">2004: D+7.75%</span> → <span class="metric d-safe">2008: D+22.00%</span> → <span class="metric d-likely">2012: D+14.73%</span> → <span class="metric r-tilt">2016: R+4.53%</span> → <span class="metric r-tilt">2020: R+4.78%</span> → <span class="metric r-lean">2024: R+7.78%</span> = <strong>14pt swing 2000-2024</strong></p>
             <p><strong>Critical Pattern:</strong> ALL counties peaked Democratic in 2008 (Obama), then flipped Republican by 2016 (Trump). Margins continued hardening Republican 2016-2024. 2012 shows intermediate position.
             <p><strong>Demographics:</strong> Predominantly white, working-class, dairy farming communities. Lower college education rates, aging population, small towns and rural areas.</p>
             <p><strong>Cultural Factors:</strong> Trade policy (particularly affecting dairy), immigration, changing Democratic coalition, and cultural issues drove dramatic shift. Counties that strongly backed Obama's economic populism embraced Trump's version.</p>
