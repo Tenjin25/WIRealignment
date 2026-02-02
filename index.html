@@ -1051,6 +1051,17 @@ document.addEventListener('DOMContentLoaded', function() {
     };
   }
   updateLegendColors(); // Ensure correct colors on load
+
+  // County Labels Toggle
+  var labelsToggle = document.getElementById('county-labels-toggle');
+  if (labelsToggle) {
+    labelsToggle.addEventListener('change', function() {
+      if (window.map && window.map.getLayer('county-label')) {
+        const visibility = this.checked ? 'visible' : 'none';
+        window.map.setLayoutProperty('county-label', 'visibility', visibility);
+      }
+    });
+  }
 });
 </script>
 <div id="map"></div>
@@ -1198,6 +1209,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 <select id="contestSelect">
                     <option value="">Select a Contest...</option>
                 </select>
+            </div>
+            <div class="control-group" style="margin-top:12px;">
+                <label style="display:flex;align-items:center;gap:8px;cursor:pointer;user-select:none;">
+                  <input type="checkbox" id="county-labels-toggle" checked style="width:18px;height:18px;cursor:pointer;">
+                  <span>🏷️ Show County Labels</span>
+                </label>
             </div>
         </div>
     </div>
