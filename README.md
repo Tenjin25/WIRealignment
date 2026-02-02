@@ -361,21 +361,21 @@ Counties are colored based on margin strength using the following classification
 
 | Rating | Margin Range | Color | 2024 County Examples |
 |--------|--------------|-------|----------------------|
-| **Annihilation Democratic** | D+40.00% or more | 🔵 Deep Blue `#08306b` | Dane (D+51.53%), Menominee (D+49.77%) |
-| **Dominant Democratic** | D+30.00% to D+39.99% | 🔵 Blue `#08519c` | Milwaukee (D+38.41%), Douglas (D+30.15%) |
-| **Stronghold Democratic** | D+20.00% to D+29.99% | 🔵 Medium Blue `#3182bd` | Bayfield (D+20.34%), Ashland (D+22.89%) |
-| **Safe Democratic** | D+10.00% to D+19.99% | 🔵 Light Blue `#6baed6` | La Crosse (D+15.36%), Eau Claire (D+11.94%) |
-| **Likely Democratic** | D+5.50% to D+9.99% | 🔵 Lighter Blue `#9ecae1` | Iowa (D+7.63%), Portage (D+6.28%) |
-| **Lean Democratic** | D+1.00% to D+5.49% | 🔵 Pale Blue `#c6dbef` | Rock (D+3.92%), Kenosha (D+2.17%) |
+| **Annihilation Democratic** | D+40.00% or more | 🔵 Deep Blue `#08306b` | Dane (D+51.53%), Menominee (D+61.70%) |
+| **Dominant Democratic** | D+30.00% to D+39.99% | 🔵 Blue `#08519c` | Milwaukee (D+38.41%) |
+| **Stronghold Democratic** | D+20.00% to D+29.99% | 🔵 Medium Blue `#3182bd` | Rare in 2024; heavy polarization |
+| **Safe Democratic** | D+10.00% to D+19.99% | 🔵 Light Blue `#6baed6` | Bayfield (D+11.09%), Eau Claire (D+10.56%) |
+| **Likely Democratic** | D+5.50% to D+9.99% | 🔵 Lighter Blue `#9ecae1` | La Crosse (D+9.36%), Iowa (D+7.63%), Rock (D+7.27%) |
+| **Lean Democratic** | D+1.00% to D+5.49% | 🔵 Pale Blue `#c6dbef` | Ashland (D+4.70%), Door (D+2.22%), Portage (D+1.19%) |
 | **Tilt Democratic** | D+0.50% to D+0.99% | 🔵 Very Pale Blue `#e1f5fe` | Rare in 2024; most counties polarized |
-| **Tossup** | Less than ±0.50% | ⚪ Gray `#f7f7f7` | None in 2024 (closest: Sauk R+0.62%) |
-| **Tilt Republican** | R+0.50% to R+0.99% | 🔴 Very Pale Red `#fee8c8` | Sauk (R+0.62%), Door (R+0.97%) |
-| **Lean Republican** | R+1.00% to R+5.49% | 🔴 Pale Red `#fcae91` | Pierce (R+2.84%), Trempealeau (R+4.89%) |
-| **Likely Republican** | R+5.50% to R+9.99% | 🔴 Light Red `#fb6a4a` | Vernon (R+7.78%), Winnebago (R+7.34%) |
-| **Safe Republican** | R+10.00% to R+19.99% | 🔴 Medium Red `#ef3b2c` | Waukesha (R+19.69%), Brown (R+10.73%), Outagamie (R+12.57%) |
-| **Stronghold Republican** | R+20.00% to R+29.99% | 🔴 Red `#cb181d` | Lafayette (R+20.23%), Shawano (R+24.15%) |
-| **Dominant Republican** | R+30.00% to R+39.99% | 🔴 Dark Red `#a50f15` | Washington (R+36.21%), Calumet (R+31.47%) |
-| **Annihilation Republican** | R+40.00% or more | 🔴 Deep Red `#67000d` | Waukesha (2004: R+35.29%), rural counties in past years |
+| **Tossup** | Less than ±0.50% | ⚪ Gray `#f7f7f7` | None in 2024 (closest: Portage D+1.19%, Sauk R+1.67%) |
+| **Tilt Republican** | R+0.50% to R+0.99% | 🔴 Very Pale Red `#fee8c8` | Rare in 2024; most counties polarized |
+| **Lean Republican** | R+1.00% to R+5.49% | 🔴 Pale Red `#fcae91` | Winnebago (R+4.74%), Douglas (R+5.31%) |
+| **Likely Republican** | R+5.50% to R+9.99% | 🔴 Light Red `#fb6a4a` | Kenosha (R+6.23%), Brown (R+7.50%), Vernon (R+7.78%) |
+| **Safe Republican** | R+10.00% to R+19.99% | 🔴 Medium Red `#ef3b2c` | Outagamie (R+10.17%), Pierce (R+16.72%), Waukesha (R+19.69%), Calumet (R+19.93%) |
+| **Stronghold Republican** | R+20.00% to R+29.99% | 🔴 Red `#cb181d` | Lafayette (R+20.23%), Trempealeau (R+21.41%) |
+| **Dominant Republican** | R+30.00% to R+39.99% | 🔴 Dark Red `#a50f15` | Shawano (R+33.23%), Washington (R+36.21%) |
+| **Annihilation Republican** | R+40.00% or more | 🔴 Deep Red `#67000d` | None in 2024 (Washington 2004: R+40.58%, rural counties pre-2016) |
 
 **Note**: These 2024 examples show Wisconsin's political geography - urban/university counties (Dane, Milwaukee) strongly Democratic, suburban counties moderating (Waukesha from R+35% to R+20%), working-class counties (BOW) turned Republican, and rural counties (Driftless Area) showing massive rightward shifts.
 
