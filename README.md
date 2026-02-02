@@ -4,6 +4,17 @@
 
 ![Wisconsin Election Map](https://img.shields.io/badge/Elections-2000--2024-blue) ![Data Source](https://img.shields.io/badge/Data-OpenElections-green) ![Status](https://img.shields.io/badge/Status-Active-success)
 
+## 📸 Screenshots
+
+![Wisconsin Interactive Map](screenshots/wisconsin-map-overview.png)
+*Interactive choropleth map showing Wisconsin counties colored by 2024 presidential election margins*
+
+![County Details Panel](screenshots/county-details-sidebar.png)
+*Detailed election results and historical trends for selected counties*
+
+![Research Findings](screenshots/research-findings.png)
+*Comprehensive analysis of regional political realignment patterns*
+
 ## 🎯 Project Overview
 
 This project provides an interactive choropleth map and comprehensive analysis of Wisconsin's political realignment over 13 presidential election cycles (2000-2024). The visualization reveals how counties shifted between Democratic and Republican support, highlighting key regional patterns like the suburban WOW counties moderating, the Fox Valley BOW counties flipping Republican, and the Driftless Area's dramatic 40+ point swings.
