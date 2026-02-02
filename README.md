@@ -29,42 +29,42 @@ The research findings use a **gradient color system** to visualize political shi
 Colors represent the **shift from the previous election**, not the absolute margin:
 
 **Democratic Shifts** (county moving left):
-- <span style="background: #eff6ff; color: #1d4ed8; padding: 2px 6px; border-radius: 3px;">Light Blue</span> = 0-2 point Dem shift
-- <span style="background: #dbeafe; color: #1e40af; padding: 2px 6px; border-radius: 3px;">Blue</span> = 2-5 point shift
-- <span style="background: #bfdbfe; color: #1e3a8a; padding: 2px 6px; border-radius: 3px;">Medium Blue</span> = 5-10 point shift
-- <span style="background: #93c5fd; color: #1e3a8a; padding: 2px 6px; border-radius: 3px;">Strong Blue</span> = 10-15 point shift
-- <span style="background: #60a5fa; color: #1e293b; padding: 2px 6px; border-radius: 3px;">Deep Blue</span> = 15-20 point shift
-- <span style="background: #3b82f6; color: #f8fafc; padding: 2px 6px; border-radius: 3px;">Darkest Blue</span> = 20+ point shift
+- <span style="background: #eff6ff; color: #1d4ed8; padding: 2px 6px; border-radius: 3px;">Tilt</span> = 0-2 point Dem shift
+- <span style="background: #dbeafe; color: #1e40af; padding: 2px 6px; border-radius: 3px;">Lean</span> = 2-5 point shift
+- <span style="background: #bfdbfe; color: #1e3a8a; padding: 2px 6px; border-radius: 3px;">Likely</span> = 5-10 point shift
+- <span style="background: #93c5fd; color: #1e3a8a; padding: 2px 6px; border-radius: 3px;">Safe</span> = 10-15 point shift
+- <span style="background: #60a5fa; color: #1e293b; padding: 2px 6px; border-radius: 3px;">Strong</span> = 15-20 point shift
+- <span style="background: #3b82f6; color: #f8fafc; padding: 2px 6px; border-radius: 3px;">Dominant</span> = 20+ point shift
 
 **Republican Shifts** (county moving right):
-- <span style="background: #fee2e2; color: #dc2626; padding: 2px 6px; border-radius: 3px;">Light Red</span> = 0-2 point Rep shift
-- <span style="background: #fecaca; color: #b91c1c; padding: 2px 6px; border-radius: 3px;">Red</span> = 2-5 point shift
-- <span style="background: #fca5a5; color: #991b1b; padding: 2px 6px; border-radius: 3px;">Medium Red</span> = 5-10 point shift
-- <span style="background: #f87171; color: #7f1d1d; padding: 2px 6px; border-radius: 3px;">Strong Red</span> = 10-15 point shift
-- <span style="background: #ef4444; color: #fef2f2; padding: 2px 6px; border-radius: 3px;">Deep Red</span> = 15-20 point shift
-- <span style="background: #dc2626; color: #ffffff; padding: 2px 6px; border-radius: 3px;">Darkest Red</span> = 20+ point shift
+- <span style="background: #fee2e2; color: #dc2626; padding: 2px 6px; border-radius: 3px;">Tilt</span> = 0-2 point Rep shift
+- <span style="background: #fecaca; color: #b91c1c; padding: 2px 6px; border-radius: 3px;">Lean</span> = 2-5 point shift
+- <span style="background: #fca5a5; color: #991b1b; padding: 2px 6px; border-radius: 3px;">Likely</span> = 5-10 point shift
+- <span style="background: #f87171; color: #7f1d1d; padding: 2px 6px; border-radius: 3px;">Safe</span> = 10-15 point shift
+- <span style="background: #ef4444; color: #fef2f2; padding: 2px 6px; border-radius: 3px;">Strong</span> = 15-20 point shift
+- <span style="background: #dc2626; color: #ffffff; padding: 2px 6px; border-radius: 3px;">Dominant</span> = 20+ point shift
 
 **Example - Ozaukee County (Dramatic Democratic Shift):**
 ```
 2000: R+33.77% [RED - started Republican]
-2004: R+32.41% [LIGHT BLUE - 1.4pt Dem shift]
-2008: R+21.72% [SAFE BLUE - 10.7pt Dem shift]
-2012: R+30.31% [MEDIUM RED - 8.6pt Rep shift]
-2016: R+18.82% [SAFE BLUE - 11.5pt Dem shift]
-2020: R+12.03% [MEDIUM BLUE - 6.8pt Dem shift]
-2024: R+10.45% [LIGHT BLUE - 1.6pt Dem shift]
+2004: R+32.41% [TILT - 1.4pt Dem shift]
+2008: R+21.72% [SAFE - 10.7pt Dem shift]
+2012: R+30.31% [LIKELY - 8.6pt Rep shift]
+2016: R+18.82% [SAFE - 11.5pt Dem shift]
+2020: R+12.03% [LIKELY - 6.8pt Dem shift]
+2024: R+10.45% [TILT - 1.6pt Dem shift]
 ```
 Result: County still Republican but trending Democratic (lots of blue = leftward movement)
 
 **Example - Lafayette County (Dramatic Republican Shift):**
 ```
 2000: D+5.15% [BLUE - started Democratic]
-2004: D+5.64% [LIGHT BLUE - 0.5pt Dem shift]
-2008: D+22.32% [STRONG BLUE - 16.7pt Dem shift]
-2012: D+15.37% [MEDIUM RED - 7.0pt Rep shift]
-2016: R+8.99% [DARKEST RED - 24.4pt Rep shift!]
-2020: R+13.72% [LEAN RED - 4.7pt Rep shift]
-2024: R+20.23% [MEDIUM RED - 6.5pt Rep shift]
+2004: D+5.64% [TILT - 0.5pt Dem shift]
+2008: D+22.32% [STRONG - 16.7pt Dem shift]
+2012: D+15.37% [LIKELY - 7.0pt Rep shift]
+2016: R+8.99% [DOMINANT - 24.4pt Rep shift!]
+2020: R+13.72% [LEAN - 4.7pt Rep shift]
+2024: R+20.23% [LIKELY - 6.5pt Rep shift]
 ```
 Result: Flipped from D to R with lots of red = rightward movement
 
