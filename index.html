@@ -1051,17 +1051,6 @@ document.addEventListener('DOMContentLoaded', function() {
     };
   }
   updateLegendColors(); // Ensure correct colors on load
-
-  // County Labels Toggle
-  var labelsToggle = document.getElementById('county-labels-toggle');
-  if (labelsToggle) {
-    labelsToggle.addEventListener('change', function() {
-      if (window.map && window.map.getLayer('county-label')) {
-        const visibility = this.checked ? 'visible' : 'none';
-        window.map.setLayoutProperty('county-label', 'visibility', visibility);
-      }
-    });
-  }
 });
 </script>
 <div id="map"></div>
@@ -2191,6 +2180,16 @@ function mergeGeoElectionData(boundaryGeoJSON, electionData, countyKey='County',
             'text-halo-width': 2
           }
         });
+        
+        // County Labels Toggle - attach event listener after layer is created
+        const labelsToggle = document.getElementById('county-labels-toggle');
+        if (labelsToggle) {
+          labelsToggle.addEventListener('change', function() {
+            const visibility = this.checked ? 'visible' : 'none';
+            map.setLayoutProperty('county-label', 'visibility', visibility);
+          });
+        }
+        
         // Add mouseleave event handler
         map.on('mouseleave', 'county-fill', () => {
           map.getCanvas().style.cursor = '';
