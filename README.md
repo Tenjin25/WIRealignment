@@ -16,6 +16,68 @@ This project provides an interactive choropleth map and comprehensive analysis o
 - **Accurate Margin Calculations**: Includes third-party votes in all margin calculations for precision matching between map and data
 - **Responsive Design**: Fully functional sidebar with collapsible research findings and demographic context
 
+## 🏛️ Political Context: Understanding Wisconsin's Realignment
+
+### Urban-Rural Polarization: Democrats Confined to Cities
+
+Wisconsin's political transformation over the past 24 years reflects a national pattern: **Democrats increasingly concentrated in urban centers while Republicans dominate rural areas**. This geographic sorting has fundamentally reshaped the state's electoral landscape.
+
+**The Urban Democratic Strongholds:**
+- **Milwaukee County** (population ~950,000): The state's largest city has shifted from D+20% (2000) to D+38% (2024). Milwaukee's African American population (40% of the county), Latino communities, and young urban professionals form a deep blue anchor. However, its population has stagnated while Republican rural areas grow in political influence.
+- **Dane County** (Madison, population ~550,000): Home to the University of Wisconsin-Madison and state government, Dane has surged from D+18% (2000) to D+51% (2024). This 33-point leftward shift makes it Wisconsin's most Democratic county, driven by college-educated professionals, students, and the tech sector.
+
+**The Suburban Battleground:**
+The WOW counties (Waukesha, Ozaukee, Washington) surrounding Milwaukee tell a more complex story. While they remain Republican strongholds, college-educated suburban voters have moderated their conservatism:
+- **Waukesha County**: R+35% (2004) → R+20% (2024) - a 15-point Democratic gain
+- **Ozaukee County**: R+32% (2004) → R+10% (2024) - a 22-point swing, nearly competitive
+- These shifts reflect nationwide trends of college-educated professionals moving left on social issues, even as they remain economically conservative.
+
+**The Rural Republican Surge:**
+Wisconsin's rural counties, particularly in the northern and western regions, have experienced dramatic Republican gains:
+- **Driftless Area** (southwestern Wisconsin): Counties like **Lafayette** flipped from D+25% (2000) to R+20% (2024) - a stunning 45-point swing. This region, once dominated by family dairy farms and Norwegian/German immigrant communities with strong labor union ties, has been transformed by economic decline, aging populations, and cultural backlash.
+- **BOW Counties** (Brown, Outagamie, Winnebago - Fox Valley): Industrial counties anchored by Green Bay and Appleton have shifted sharply rightward, with margins moving 20-30 points Republican since 2000. Manufacturing job losses, declining union membership, and white working-class political realignment drove this change.
+
+The result: **Democrats win big in 2 counties (Milwaukee and Dane) but lose almost everywhere else.** In 2024, Joe Biden won only 10 of Wisconsin's 72 counties while losing the state. This geographic concentration creates a structural disadvantage in statewide races.
+
+### The Scott Walker Era: Catalyst for Polarization
+
+No single figure looms larger in Wisconsin's modern political realignment than **Scott Walker**, whose governorship (2011-2019) accelerated the state's partisan polarization and reshaped its political coalitions.
+
+**2010: The Tea Party Wave**  
+Walker's election as governor in November 2010 rode the Tea Party wave that swept Republicans into power nationwide. He defeated Milwaukee Mayor Tom Barrett by 5 points, promising fiscal conservatism and limited government. Republicans also captured both chambers of the state legislature, giving Walker unified control.
+
+**2011: Act 10 and the Capitol Uprising**  
+In February 2011, just weeks into his term, Walker introduced **Act 10 (Wisconsin Budget Repair Bill)**, which effectively eliminated collective bargaining rights for most public sector unions. The legislation:
+- Prohibited unions from negotiating wages beyond inflation
+- Required annual recertification votes
+- Ended automatic dues collection
+- Exempted police and firefighters (key Walker supporters)
+
+The response was unprecedented: **100,000+ protesters occupied the Wisconsin State Capitol for weeks**, Democratic state senators fled to Illinois to deny quorum, and the nation watched Madison become ground zero for labor battles. The protests failed—Act 10 passed and was upheld by courts.
+
+**2012: The Recall Election**  
+Outraged Democrats collected 900,000 signatures to force a gubernatorial recall election, only the third in U.S. history. The June 2012 recall became the most expensive gubernatorial race in American history (over $80 million spent), with Walker defeating Tom Barrett again, this time by 7 points.
+
+**Political Consequences:**  
+Walker's victory in the recall had profound effects:
+1. **Union Collapse**: Public sector union membership plummeted 50%+ as automatic dues ended. This decimated a key Democratic organizing infrastructure and funding source.
+2. **Rural Consolidation**: Walker's aggressive conservatism and "Wisconsin is open for business" messaging solidified Republican gains in rural counties. The Driftless Area's swing from Obama (2008) to Trump (2016) was partially rooted in Walker-era realignment.
+3. **FOX Valley Shift**: The BOW counties, with significant public sector employment, swung heavily Republican as Walker's anti-union message resonated with private sector workers who resented public employee benefits.
+4. **Permanent Polarization**: The Act 10 fight created bitter partisan divides that persist today. Wisconsin politics became almost tribal, with few crossover voters.
+
+**2016 and Beyond:**  
+By the time Walker left office in 2019 (narrowly losing to Democrat Tony Evers), Wisconsin had transformed from a purple swing state into a deeply polarized battleground with razor-thin margins. His legacy includes:
+- Republican legislative dominance through aggressive gerrymandering (2011 redistricting)
+- Weakened labor unions unable to mobilize for Democrats
+- Rural counties shifting 20-40 points Republican
+- Urban counties shifting 15-30 points Democratic in backlash
+- Suburban WOW counties moderating as college-educated voters rejected Walker's style
+
+**The Trump Connection:**  
+Walker's success with white working-class voters, particularly in the Fox Valley and northern Wisconsin, foreshadowed Trump's 2016 coalition. Many Obama-Walker voters became Trump voters, viewing both as anti-establishment figures willing to challenge "elites." Trump's narrow 22,748-vote Wisconsin victory in 2016 was built on the same rural and working-class base Walker cultivated.
+
+Today, Wisconsin remains one of America's most evenly divided states, decided by margins under 1% in four of the last six presidential elections. But the **geographic sorting** is complete: Democrats dominate cities, Republicans dominate everywhere else, and suburbs hold the balance of power.
+
 ## 📊 Data Methodology
 
 ### Data Sources
