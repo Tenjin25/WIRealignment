@@ -48,9 +48,9 @@ Colors represent the **shift from the previous election**, not the absolute marg
 ```
 2000: R+33.77% [RED - started Republican]
 2004: R+32.41% [LIGHT BLUE - 1.4pt Dem shift]
-2008: R+21.72% [STRONG BLUE - 10.7pt Dem shift]
+2008: R+21.72% [SAFE BLUE - 10.7pt Dem shift]
 2012: R+30.31% [MEDIUM RED - 8.6pt Rep shift]
-2016: R+18.82% [DEEP BLUE - 11.5pt Dem shift]
+2016: R+18.82% [SAFE BLUE - 11.5pt Dem shift]
 2020: R+12.03% [MEDIUM BLUE - 6.8pt Dem shift]
 2024: R+10.45% [LIGHT BLUE - 1.6pt Dem shift]
 ```
@@ -59,11 +59,11 @@ Result: County still Republican but trending Democratic (lots of blue = leftward
 **Example - Lafayette County (Dramatic Republican Shift):**
 ```
 2000: D+5.15% [BLUE - started Democratic]
-2004: D+5.64% [LIGHT RED - 0.5pt Rep shift]
-2008: D+22.32% [DEEP BLUE - 16.7pt Dem shift]
-2012: D+15.37% [MEDIUM RED - 7pt Rep shift]
+2004: D+5.64% [LIGHT BLUE - 0.5pt Dem shift]
+2008: D+22.32% [STRONG BLUE - 16.7pt Dem shift]
+2012: D+15.37% [MEDIUM RED - 7.0pt Rep shift]
 2016: R+8.99% [DARKEST RED - 24.4pt Rep shift!]
-2020: R+13.72% [LIGHT RED - 4.7pt Rep shift]
+2020: R+13.72% [LEAN RED - 4.7pt Rep shift]
 2024: R+20.23% [MEDIUM RED - 6.5pt Rep shift]
 ```
 Result: Flipped from D to R with lots of red = rightward movement
