@@ -14,7 +14,61 @@ This project provides an interactive choropleth map and comprehensive analysis o
 - **Temporal Analysis**: Year-by-year slider to track political shifts over 24 years
 - **Comprehensive Research Findings**: Curated narratives on Milwaukee County, WOW suburbs, Dane County, BOW industrial counties, and the Driftless Area
 - **Accurate Margin Calculations**: Includes third-party votes in all margin calculations for precision matching between map and data
+- **Gradient Shift Colors**: Visual storytelling through color-coded shifts showing county movement over time
 - **Responsive Design**: Fully functional sidebar with collapsible research findings and demographic context
+
+### 🎨 Understanding the Color System
+
+The research findings use a **gradient color system** to visualize political shifts over time:
+
+**Baseline Year (2000):**
+- <span style="background: #fee2e2; color: #dc2626; padding: 2px 6px; border-radius: 3px;">**Red**</span> = Started Republican (R+)
+- <span style="background: #eff6ff; color: #1d4ed8; padding: 2px 6px; border-radius: 3px;">**Blue**</span> = Started Democratic (D+)
+
+**Subsequent Years (2004-2024):**
+Colors represent the **shift from the previous election**, not the absolute margin:
+
+**Democratic Shifts** (county moving left):
+- <span style="background: #eff6ff; color: #1d4ed8; padding: 2px 6px; border-radius: 3px;">Light Blue</span> = 0-2 point Dem shift
+- <span style="background: #dbeafe; color: #1e40af; padding: 2px 6px; border-radius: 3px;">Blue</span> = 2-5 point shift
+- <span style="background: #bfdbfe; color: #1e3a8a; padding: 2px 6px; border-radius: 3px;">Medium Blue</span> = 5-10 point shift
+- <span style="background: #93c5fd; color: #1e3a8a; padding: 2px 6px; border-radius: 3px;">Strong Blue</span> = 10-15 point shift
+- <span style="background: #60a5fa; color: #1e293b; padding: 2px 6px; border-radius: 3px;">Deep Blue</span> = 15-20 point shift
+- <span style="background: #3b82f6; color: #f8fafc; padding: 2px 6px; border-radius: 3px;">Darkest Blue</span> = 20+ point shift
+
+**Republican Shifts** (county moving right):
+- <span style="background: #fee2e2; color: #dc2626; padding: 2px 6px; border-radius: 3px;">Light Red</span> = 0-2 point Rep shift
+- <span style="background: #fecaca; color: #b91c1c; padding: 2px 6px; border-radius: 3px;">Red</span> = 2-5 point shift
+- <span style="background: #fca5a5; color: #991b1b; padding: 2px 6px; border-radius: 3px;">Medium Red</span> = 5-10 point shift
+- <span style="background: #f87171; color: #7f1d1d; padding: 2px 6px; border-radius: 3px;">Strong Red</span> = 10-15 point shift
+- <span style="background: #ef4444; color: #fef2f2; padding: 2px 6px; border-radius: 3px;">Deep Red</span> = 15-20 point shift
+- <span style="background: #dc2626; color: #ffffff; padding: 2px 6px; border-radius: 3px;">Darkest Red</span> = 20+ point shift
+
+**Example - Ozaukee County (Dramatic Democratic Shift):**
+```
+2000: R+33.77% [RED - started Republican]
+2004: R+32.41% [LIGHT BLUE - 1.4pt Dem shift]
+2008: R+21.72% [STRONG BLUE - 10.7pt Dem shift]
+2012: R+30.31% [MEDIUM RED - 8.6pt Rep shift]
+2016: R+18.82% [DEEP BLUE - 11.5pt Dem shift]
+2020: R+12.03% [MEDIUM BLUE - 6.8pt Dem shift]
+2024: R+10.45% [LIGHT BLUE - 1.6pt Dem shift]
+```
+Result: County still Republican but trending Democratic (lots of blue = leftward movement)
+
+**Example - Lafayette County (Dramatic Republican Shift):**
+```
+2000: D+5.15% [BLUE - started Democratic]
+2004: D+5.64% [LIGHT RED - 0.5pt Rep shift]
+2008: D+22.32% [DEEP BLUE - 16.7pt Dem shift]
+2012: D+15.37% [MEDIUM RED - 7pt Rep shift]
+2016: R+8.99% [DARKEST RED - 24.4pt Rep shift!]
+2020: R+13.72% [LIGHT RED - 4.7pt Rep shift]
+2024: R+20.23% [MEDIUM RED - 6.5pt Rep shift]
+```
+Result: Flipped from D to R with lots of red = rightward movement
+
+This color system makes it immediately clear which counties are **trending** Democratic (suburban WOW counties) versus Republican (rural Driftless counties), even when they remain in their original party's column.
 
 ## 🏛️ Political Context: Understanding Wisconsin's Realignment
 
