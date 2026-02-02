@@ -243,23 +243,23 @@ Madison metro area (UW-Madison, state government, tech sector) showing explosive
 
 Counties are colored based on margin strength using the following classification system:
 
-| Rating | Margin Range | Color | Hex Code | 2024 County Examples |
-|--------|--------------|-------|----------|----------------------|
-| **Annihilation Democratic** | D+40.00% or more | ![#08306b](https://via.placeholder.com/15/08306b/08306b.png) | `#08306b` | Dane (D+51.53%), Menominee (D+49.77%) |
-| **Dominant Democratic** | D+30.00% to D+39.99% | ![#08519c](https://via.placeholder.com/15/08519c/08519c.png) | `#08519c` | Milwaukee (D+38.41%), Douglas (D+30.15%) |
-| **Stronghold Democratic** | D+20.00% to D+29.99% | ![#3182bd](https://via.placeholder.com/15/3182bd/3182bd.png) | `#3182bd` | Bayfield (D+20.34%), Ashland (D+22.89%) |
-| **Safe Democratic** | D+10.00% to D+19.99% | ![#6baed6](https://via.placeholder.com/15/6baed6/6baed6.png) | `#6baed6` | La Crosse (D+15.36%), Eau Claire (D+11.94%) |
-| **Likely Democratic** | D+5.50% to D+9.99% | ![#9ecae1](https://via.placeholder.com/15/9ecae1/9ecae1.png) | `#9ecae1` | Iowa (D+7.63%), Portage (D+6.28%) |
-| **Lean Democratic** | D+1.00% to D+5.49% | ![#c6dbef](https://via.placeholder.com/15/c6dbef/c6dbef.png) | `#c6dbef` | Rock (D+3.92%), Kenosha (D+2.17%) |
-| **Tilt Democratic** | D+0.50% to D+0.99% | ![#e1f5fe](https://via.placeholder.com/15/e1f5fe/e1f5fe.png) | `#e1f5fe` | Rare in 2024; most counties polarized |
-| **Tossup** | Less than ±0.50% | ![#f7f7f7](https://via.placeholder.com/15/f7f7f7/f7f7f7.png) | `#f7f7f7` | None in 2024 (closest: Sauk R+0.62%) |
-| **Tilt Republican** | R+0.50% to R+0.99% | ![#fee8c8](https://via.placeholder.com/15/fee8c8/fee8c8.png) | `#fee8c8` | Sauk (R+0.62%), Door (R+0.97%) |
-| **Lean Republican** | R+1.00% to R+5.49% | ![#fcae91](https://via.placeholder.com/15/fcae91/fcae91.png) | `#fcae91` | Pierce (R+2.84%), Trempealeau (R+4.89%) |
-| **Likely Republican** | R+5.50% to R+9.99% | ![#fb6a4a](https://via.placeholder.com/15/fb6a4a/fb6a4a.png) | `#fb6a4a` | Vernon (R+7.78%), Winnebago (R+7.34%) |
-| **Safe Republican** | R+10.00% to R+19.99% | ![#ef3b2c](https://via.placeholder.com/15/ef3b2c/ef3b2c.png) | `#ef3b2c` | Waukesha (R+19.69%), Brown (R+10.73%), Outagamie (R+12.57%) |
-| **Stronghold Republican** | R+20.00% to R+29.99% | ![#cb181d](https://via.placeholder.com/15/cb181d/cb181d.png) | `#cb181d` | Lafayette (R+20.23%), Shawano (R+24.15%) |
-| **Dominant Republican** | R+30.00% to R+39.99% | ![#a50f15](https://via.placeholder.com/15/a50f15/a50f15.png) | `#a50f15` | Washington (R+36.21%), Calumet (R+31.47%) |
-| **Annihilation Republican** | R+40.00% or more | ![#67000d](https://via.placeholder.com/15/67000d/67000d.png) | `#67000d` | Waukesha (2004: R+35.29%), rural counties in past years |
+| Rating | Margin Range | Color | 2024 County Examples |
+|--------|--------------|-------|----------------------|
+| **Annihilation Democratic** | D+40.00% or more | 🔵 Deep Blue `#08306b` | Dane (D+51.53%), Menominee (D+49.77%) |
+| **Dominant Democratic** | D+30.00% to D+39.99% | 🔵 Blue `#08519c` | Milwaukee (D+38.41%), Douglas (D+30.15%) |
+| **Stronghold Democratic** | D+20.00% to D+29.99% | 🔵 Medium Blue `#3182bd` | Bayfield (D+20.34%), Ashland (D+22.89%) |
+| **Safe Democratic** | D+10.00% to D+19.99% | 🔵 Light Blue `#6baed6` | La Crosse (D+15.36%), Eau Claire (D+11.94%) |
+| **Likely Democratic** | D+5.50% to D+9.99% | 🔵 Lighter Blue `#9ecae1` | Iowa (D+7.63%), Portage (D+6.28%) |
+| **Lean Democratic** | D+1.00% to D+5.49% | 🔵 Pale Blue `#c6dbef` | Rock (D+3.92%), Kenosha (D+2.17%) |
+| **Tilt Democratic** | D+0.50% to D+0.99% | 🔵 Very Pale Blue `#e1f5fe` | Rare in 2024; most counties polarized |
+| **Tossup** | Less than ±0.50% | ⚪ Gray `#f7f7f7` | None in 2024 (closest: Sauk R+0.62%) |
+| **Tilt Republican** | R+0.50% to R+0.99% | 🔴 Very Pale Red `#fee8c8` | Sauk (R+0.62%), Door (R+0.97%) |
+| **Lean Republican** | R+1.00% to R+5.49% | 🔴 Pale Red `#fcae91` | Pierce (R+2.84%), Trempealeau (R+4.89%) |
+| **Likely Republican** | R+5.50% to R+9.99% | 🔴 Light Red `#fb6a4a` | Vernon (R+7.78%), Winnebago (R+7.34%) |
+| **Safe Republican** | R+10.00% to R+19.99% | 🔴 Medium Red `#ef3b2c` | Waukesha (R+19.69%), Brown (R+10.73%), Outagamie (R+12.57%) |
+| **Stronghold Republican** | R+20.00% to R+29.99% | 🔴 Red `#cb181d` | Lafayette (R+20.23%), Shawano (R+24.15%) |
+| **Dominant Republican** | R+30.00% to R+39.99% | 🔴 Dark Red `#a50f15` | Washington (R+36.21%), Calumet (R+31.47%) |
+| **Annihilation Republican** | R+40.00% or more | 🔴 Deep Red `#67000d` | Waukesha (2004: R+35.29%), rural counties in past years |
 
 **Note**: These 2024 examples show Wisconsin's political geography - urban/university counties (Dane, Milwaukee) strongly Democratic, suburban counties moderating (Waukesha from R+35% to R+20%), working-class counties (BOW) turned Republican, and rural counties (Driftless Area) showing massive rightward shifts.
 

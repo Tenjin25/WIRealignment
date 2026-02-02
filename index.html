@@ -819,11 +819,22 @@ body {
   }
 }
 .metric {
-  background: #dbeafe;
-  padding: 2px 6px;
+  background: #eff6ff;
+  padding: 4px 8px;
   border-radius: 4px;
   font-weight: 600;
-  color: #1e40af;
+  color: #1d4ed8;
+  display: inline-block;
+  margin: 2px;
+  border: 1px solid #dbeafe;
+  font-size: 13px;
+}
+
+/* Red variant for Republican margins/shifts */
+.metric.red {
+  background: #fee2e2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
 }
 
 /* Mobile: Touch-friendly inputs and buttons */
@@ -851,16 +862,6 @@ body {
 }
 
 /* End of styles */
-
-.metric {
-  background: #eff6ff;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-weight: 600;
-  color: #1d4ed8;
-  display: inline-block;
-  margin: 2px;
-}
 
 /* Status panel */
 .status-panel {
@@ -995,14 +996,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <h4>🔍 Research Findings</h4>
           <div class="finding-card">
             <h5>Milwaukee County - Urban Democratic Stronghold</h5>
-            <p><strong>Historical Trend:</strong> Milwaukee County has shown steadily increasing Democratic margins in presidential races:</p>
-            <p style="margin: 8px 0; padding-left: 12px; line-height: 2.2; font-size: 13px;">
-              <span style="background: rgba(49, 130, 189, 0.2); color: #1e40af; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(49, 130, 189, 0.3); white-space: nowrap; display: inline-block; font-size: 12px;">2000: D+21.36%</span> → 
-              <span style="background: rgba(8, 81, 156, 0.2); color: #1e3a8a; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(8, 81, 156, 0.3); white-space: nowrap; display: inline-block; font-size: 12px;">2008: D+36.31%</span> → 
-              <span style="background: rgba(8, 48, 107, 0.2); color: #1e3a8a; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(8, 48, 107, 0.3); white-space: nowrap; display: inline-block; font-size: 12px;">2016: D+39.30%</span> → 
-              <span style="background: rgba(8, 48, 107, 0.2); color: #1e3a8a; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(8, 48, 107, 0.3); white-space: nowrap; display: inline-block; font-size: 12px;">2020: D+40.50%</span> → 
-              <span style="background: rgba(8, 48, 107, 0.2); color: #1e3a8a; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(8, 48, 107, 0.3); white-space: nowrap; display: inline-block; font-size: 12px;">2024: D+39.24%</span>
-            </p>
+            <p><strong>Historical Trend:</strong> Milwaukee County has shown steadily increasing Democratic margins: <span class="metric">2000: D+20.49%</span> → <span class="metric">2008: D+35.85%</span> → <span class="metric">2016: D+37.01%</span> → <span class="metric">2020: D+39.85%</span> → <span class="metric">2024: D+38.41%</span></p>
             <p><strong>Pattern:</strong> 18-point leftward shift from 2000 to peak in 2020. Margins now stabilized at D+39-40%.</p>
             <p><strong>Key Demographics:</strong> Large African American population (26.8%), urban professionals, and college-educated voters. Wisconsin's most populous county (~945,000 residents).</p>
             <p><strong>Geography:</strong> City of Milwaukee drives Democratic margins, while suburban areas show mixed patterns.</p>
@@ -1012,25 +1006,16 @@ document.addEventListener('DOMContentLoaded', function() {
             <h5>WOW Counties - Suburban Republican Strongholds (Moderating)</h5>
             <p><strong>Geographic Context:</strong> Waukesha, Ozaukee, and Washington counties form the affluent suburban collar around Milwaukee, historically the Republican firewall in statewide elections.</p>
             <p><strong>Trend Comparison (2004→2024):</strong></p>
-            <p style="margin: 8px 0; padding-left: 12px; line-height: 2.2; font-size: 12px;">
-              <strong>Waukesha:</strong> <span style="background: rgba(103, 0, 13, 0.2); color: #991b1b; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(103, 0, 13, 0.3); font-size: 11px;">2004: R+35.29%</span> → <span style="background: rgba(239, 59, 44, 0.2); color: #dc2626; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(239, 59, 44, 0.3); font-size: 11px;">2024: R+19.69%</span> = <span style="background: rgba(37, 99, 235, 0.2); color: #1d4ed8; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(37, 99, 235, 0.3); font-size: 11px;">16pt D shift</span><br>
-              <strong>Ozaukee:</strong> <span style="background: rgba(103, 0, 13, 0.2); color: #991b1b; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(103, 0, 13, 0.3); font-size: 11px;">2004: R+32.41%</span> → <span style="background: rgba(239, 59, 44, 0.2); color: #dc2626; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(239, 59, 44, 0.3); font-size: 11px;">2024: R+10.45%</span> = <span style="background: rgba(37, 99, 235, 0.2); color: #1d4ed8; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(37, 99, 235, 0.3); font-size: 11px;">22pt D shift</span><br>
-              <strong>Washington:</strong> <span style="background: rgba(103, 0, 13, 0.2); color: #991b1b; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(103, 0, 13, 0.3); font-size: 11px;">2004: R+40.58%</span> → <span style="background: rgba(203, 24, 29, 0.2); color: #991b1b; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(203, 24, 29, 0.3); font-size: 11px;">2024: R+36.21%</span> = <span style="background: rgba(37, 99, 235, 0.2); color: #1d4ed8; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(37, 99, 235, 0.3); font-size: 11px;">4pt D shift</span>
-            </p>
+            <p><strong>Waukesha:</strong> <span class="metric red">2004: R+35.29%</span> → <span class="metric red">2024: R+19.69%</span> = 16pt Democratic shift<br>
+            <strong>Ozaukee:</strong> <span class="metric red">2004: R+32.41%</span> → <span class="metric red">2024: R+10.45%</span> = 22pt Democratic shift<br>
+            <strong>Washington:</strong> <span class="metric red">2004: R+40.58%</span> → <span class="metric red">2024: R+36.21%</span> = 4pt Democratic shift</p>
             <p><strong>Pattern:</strong> All three WOW counties showing consistent Democratic gains (13-16 points over 20 years). College-educated suburban voters shifting left, though all remain solidly Republican.</p>
             <p><strong>Demographics:</strong> Affluent, highly educated (45-50% bachelor's degree+), predominantly white suburban communities. Combined population ~620,000.</p>
             <p><strong>Strategic Impact:</strong> WOW counties cast ~10% of statewide votes. Their erosion from R+38-40% peaks to R+20-30% represents a massive shift - Republicans must compensate with stronger rural performance or lose statewide races.</p>
           </div>
           <div class="finding-card">
             <h5>Dane County - Rapidly Growing Progressive Base</h5>
-            <p><strong>Explosive Democratic Growth:</strong> Dane County margins have expanded dramatically:</p>
-            <p style="margin: 8px 0; padding-left: 12px; line-height: 2.2; font-size: 13px;">
-              <span style="background: rgba(8, 81, 156, 0.2); color: #1e3a8a; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(8, 81, 156, 0.3); font-size: 12px;">2000: D+28.58%</span> → 
-              <span style="background: rgba(8, 48, 107, 0.2); color: #1e3a8a; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(8, 48, 107, 0.3); font-size: 12px;">2008: D+46.98%</span> → 
-              <span style="background: rgba(8, 48, 107, 0.2); color: #1e3a8a; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(8, 48, 107, 0.3); font-size: 12px;">2016: D+47.17%</span> → 
-              <span style="background: rgba(8, 48, 107, 0.2); color: #1e3a8a; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(8, 48, 107, 0.3); font-size: 12px;">2020: D+52.61%</span> → 
-              <span style="background: rgba(8, 48, 107, 0.2); color: #1e3a8a; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(8, 48, 107, 0.3); font-size: 12px;">2024: D+51.53%</span>
-            </p>
+            <p><strong>Explosive Democratic Growth:</strong> Dane County margins have expanded dramatically: <span class="metric">2000: D+28.58%</span> → <span class="metric">2008: D+46.98%</span> → <span class="metric">2016: D+47.17%</span> → <span class="metric">2020: D+52.61%</span> → <span class="metric">2024: D+51.53%</span></p>
             <p><strong>Magnitude:</strong> <span style="background: rgba(8, 48, 107, 0.2); color: #1e3a8a; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(8, 48, 107, 0.3); font-size: 12px;">22-point leftward shift</span> since 2000 - among the largest Democratic gains in any Wisconsin county.</p>
             <p><strong>Metro Growth:</strong> Madison MSA is Wisconsin's fastest-growing region. Home to UW-Madison (45,000+ students), state government, and thriving tech sector.</p>
             <p><strong>Population:</strong> ~550,000 residents (2020), up from ~427,000 (2000) - 29% growth in 20 years.</p>
@@ -1055,11 +1040,9 @@ document.addEventListener('DOMContentLoaded', function() {
             <h5>BOW Counties - Fox Valley Realignment</h5>
             <p><strong>Geographic Context:</strong> Brown (Green Bay), Outagamie (Appleton), Winnebago (Oshkosh) form the Fox Valley industrial corridor in northeast Wisconsin.</p>
             <p><strong>Dramatic Shift:</strong> These historically competitive counties swung sharply Republican after Obama:</p>
-            <p style="margin: 8px 0; padding-left: 12px; line-height: 2.2; font-size: 13px;">
-              <strong>Brown:</strong> <span style="background: rgba(107, 174, 214, 0.2); color: #1e40af; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(107, 174, 214, 0.3); font-size: 12px;">2008: D+9.15%</span> → <span style="background: rgba(239, 59, 44, 0.2); color: #dc2626; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(239, 59, 44, 0.3); font-size: 12px;">2016: R+10.73%</span> = <span style="background: rgba(220, 20, 60, 0.2); color: #991b1b; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(220, 20, 60, 0.3); font-size: 12px;">⚠️ 20pt swing</span><br>
-              <strong>Outagamie:</strong> <span style="background: rgba(107, 174, 214, 0.2); color: #1e40af; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(107, 174, 214, 0.3); font-size: 12px;">2008: D+11.60%</span> → <span style="background: rgba(203, 24, 29, 0.2); color: #991b1b; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(203, 24, 29, 0.3); font-size: 12px;">2016: R+12.57%</span> = <span style="background: rgba(220, 20, 60, 0.2); color: #991b1b; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(220, 20, 60, 0.3); font-size: 12px;">⚠️ 24pt swing</span><br>
-              <strong>Winnebago:</strong> <span style="background: rgba(107, 174, 214, 0.2); color: #1e40af; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(107, 174, 214, 0.3); font-size: 12px;">2008: D+11.66%</span> → <span style="background: rgba(251, 106, 74, 0.2); color: #dc2626; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(251, 106, 74, 0.3); font-size: 12px;">2016: R+7.34%</span> = <span style="background: rgba(220, 20, 60, 0.2); color: #991b1b; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(220, 20, 60, 0.3); font-size: 12px;">⚠️ 19pt swing</span>
-            </p>
+            <p><strong>Brown:</strong> <span class="metric">2008: D+9.15%</span> → <span class="metric red">2016: R+10.73%</span> = 20pt swing<br>
+            <strong>Outagamie:</strong> <span class="metric">2008: D+11.60%</span> → <span class="metric red">2016: R+12.57%</span> = 24pt swing<br>
+            <strong>Winnebago:</strong> <span class="metric">2008: D+11.66%</span> → <span class="metric red">2016: R+7.34%</span> = 19pt swing</p>
             <p><strong>Stability Since 2016:</strong> Republican margins have held steady 2016-2024, suggesting permanent realignment rather than temporary shift.</p>
             <p><strong>Demographics:</strong> Working-class white voters, manufacturing jobs, smaller cities. Lower college education rates than WOW counties but more diverse than rural areas.</p>
             <p><strong>Contrast with WOW:</strong> While college-educated WOW suburbs trend Democratic, working-class BOW counties moved Republican. Different educational profiles drive opposite partisan trajectories.</p>
@@ -1068,15 +1051,13 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="finding-card">
             <h5>Driftless Area - The Obama-Trump Realignment</h5>
             <p><strong>Regional Character:</strong> Southwest Wisconsin's Driftless Area (Crawford, Grant, Iowa, Lafayette, Richland, Vernon counties) features unique topography with rolling hills never flattened by glaciers. Historically Democratic farming region with Norwegian/German heritage.</p>
-            <p><strong>Stunning Reversal:</strong> Some of America's most dramatic political realignment 2008-2016:</p>
-            <p style="margin: 8px 0; padding-left: 12px; line-height: 2.2; font-size: 12px;">
-              <strong>Crawford:</strong> <span style="background: rgba(8, 81, 156, 0.2); color: #1e3a8a; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(8, 81, 156, 0.3); font-size: 11px;">2008: D+27.03%</span> → <span style="background: rgba(251, 106, 74, 0.25); color: #dc2626; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(251, 106, 74, 0.35); font-size: 11px;">2016: R+5.41%</span> → <span style="background: rgba(203, 24, 29, 0.25); color: #991b1b; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(203, 24, 29, 0.35); font-size: 11px;">2024: R+13.76%</span> = <span style="background: rgba(139, 0, 0, 0.25); color: #7f1d1d; padding: 2px 5px; border-radius: 3px; font-weight: 700; border: 1px solid rgba(139, 0, 0, 0.35); font-size: 11px;">🔥 41pt swing</span><br>
-              <strong>Grant:</strong> <span style="background: rgba(8, 81, 156, 0.2); color: #1e3a8a; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(8, 81, 156, 0.3); font-size: 11px;">2008: D+23.88%</span> → <span style="background: rgba(239, 59, 44, 0.25); color: #dc2626; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(239, 59, 44, 0.35); font-size: 11px;">2016: R+9.47%</span> → <span style="background: rgba(203, 24, 29, 0.25); color: #991b1b; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(203, 24, 29, 0.35); font-size: 11px;">2024: R+18.15%</span> = <span style="background: rgba(139, 0, 0, 0.25); color: #7f1d1d; padding: 2px 5px; border-radius: 3px; font-weight: 700; border: 1px solid rgba(139, 0, 0, 0.35); font-size: 11px;">🔥 42pt swing</span><br>
-              <strong>Lafayette:</strong> <span style="background: rgba(8, 81, 156, 0.2); color: #1e3a8a; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(8, 81, 156, 0.3); font-size: 11px;">2008: D+22.32%</span> → <span style="background: rgba(251, 106, 74, 0.25); color: #dc2626; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(251, 106, 74, 0.35); font-size: 11px;">2016: R+8.99%</span> → <span style="background: rgba(203, 24, 29, 0.25); color: #991b1b; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(203, 24, 29, 0.35); font-size: 11px;">2024: R+20.23%</span> = <span style="background: rgba(139, 0, 0, 0.25); color: #7f1d1d; padding: 2px 5px; border-radius: 3px; font-weight: 700; border: 1px solid rgba(139, 0, 0, 0.35); font-size: 11px;">🔥 43pt swing</span><br>
-              <strong>Richland:</strong> <span style="background: rgba(8, 81, 156, 0.2); color: #1e3a8a; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(8, 81, 156, 0.3); font-size: 11px;">2008: D+20.63%</span> → <span style="background: rgba(251, 106, 74, 0.25); color: #dc2626; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(251, 106, 74, 0.35); font-size: 11px;">2016: R+5.54%</span> → <span style="background: rgba(239, 59, 44, 0.25); color: #dc2626; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(239, 59, 44, 0.35); font-size: 11px;">2024: R+13.11%</span> = <span style="background: rgba(139, 0, 0, 0.25); color: #7f1d1d; padding: 2px 5px; border-radius: 3px; font-weight: 700; border: 1px solid rgba(139, 0, 0, 0.35); font-size: 11px;">🔥 34pt swing</span><br>
-              <strong>Vernon:</strong> <span style="background: rgba(8, 81, 156, 0.2); color: #1e3a8a; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(8, 81, 156, 0.3); font-size: 11px;">2008: D+22.00%</span> → <span style="background: rgba(252, 174, 145, 0.25); color: #dc2626; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(252, 174, 145, 0.35); font-size: 11px;">2016: R+4.53%</span> → <span style="background: rgba(251, 106, 74, 0.25); color: #dc2626; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(251, 106, 74, 0.35); font-size: 11px;">2024: R+7.78%</span> = <span style="background: rgba(220, 20, 60, 0.25); color: #991b1b; padding: 2px 5px; border-radius: 3px; font-weight: 700; border: 1px solid rgba(220, 20, 60, 0.35); font-size: 11px;">🔥 30pt swing</span><br>
-              <strong>Iowa:</strong> <span style="background: rgba(8, 48, 107, 0.2); color: #1e3a8a; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(8, 48, 107, 0.3); font-size: 11px;">2008: D+34.74%</span> → <span style="background: rgba(49, 130, 189, 0.25); color: #1e40af; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(49, 130, 189, 0.35); font-size: 11px;">2016: D+15.17%</span> → <span style="background: rgba(158, 202, 225, 0.25); color: #1e40af; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(158, 202, 225, 0.35); font-size: 11px;">2024: D+7.63%</span> = <span style="background: rgba(37, 99, 235, 0.25); color: #1d4ed8; padding: 2px 5px; border-radius: 3px; font-weight: 600; border: 1px solid rgba(37, 99, 235, 0.35); font-size: 11px;">27pt shift (still D)</span>
-            </p>
+            <p><strong>Stunning Reversal:</strong> Some of America's most dramatic political realignment 2008-2024:</p>
+            <p><strong>Crawford:</strong> <span class="metric">2008: D+27.03%</span> → <span class="metric red">2016: R+5.41%</span> → <span class="metric red">2024: R+13.76%</span> = 41pt swing<br>
+            <strong>Grant:</strong> <span class="metric">2008: D+23.88%</span> → <span class="metric red">2016: R+9.47%</span> → <span class="metric red">2024: R+18.15%</span> = 42pt swing<br>
+            <strong>Lafayette:</strong> <span class="metric">2008: D+22.32%</span> → <span class="metric red">2016: R+8.99%</span> → <span class="metric red">2024: R+20.23%</span> = 43pt swing<br>
+            <strong>Richland:</strong> <span class="metric">2008: D+20.63%</span> → <span class="metric red">2016: R+5.54%</span> → <span class="metric red">2024: R+13.11%</span> = 34pt swing<br>
+            <strong>Vernon:</strong> <span class="metric">2008: D+22.00%</span> → <span class="metric red">2016: R+4.53%</span> → <span class="metric red">2024: R+7.78%</span> = 30pt swing<br>
+            <strong>Iowa:</strong> <span class="metric">2008: D+34.74%</span> → <span class="metric">2016: D+15.17%</span> → <span class="metric">2024: D+7.63%</span> = 27pt shift (still D)</p>
             <p><strong>Demographics:</strong> Predominantly white, working-class, dairy farming communities. Lower college education rates, aging population, small towns and rural areas.</p>
             <p><strong>Cultural Factors:</strong> Trade policy (particularly affecting dairy), immigration, changing Democratic coalition, and cultural issues drove dramatic shift. Counties that strongly backed Obama's economic populism embraced Trump's version.</p>
             <p><strong>Exception - Iowa County:</strong> Home to Dodgeville and Governor Dodge State Park, retains Democratic lean (D+7.8% in 2024) due to slightly higher education levels and proximity to Madison's influence.</p>
